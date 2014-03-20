@@ -1,5 +1,12 @@
 #!/bin/bash
 
+: '
+Project: https://github.com/jeffery/git-remote-deploy
+
+Copyright (C) 2014  Jeffery Fernandez <jefferyfernandez@gmail.com>
+License: MIT
+'
+
 echo -e "\n## GIT Post-Update of $1 started ##\n"
 
 updateGitRepository()
