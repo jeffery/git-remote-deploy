@@ -34,7 +34,7 @@ We now download the post-commit hook and put it in the hooks folder of the repos
     chmod +x ~/src/project.git/hooks/post-update
     
 # Setup git config in working copy
-Finally we setup our local working copy with appropriate config to push your code to
+Finally we setup our local working copy with appropriate config to push our code to
 the remote server.
 
     git remote add production ssh://<remote server>/home/<username>/src/project.git
