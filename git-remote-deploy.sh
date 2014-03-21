@@ -41,9 +41,13 @@ updateGitRepository()
 updateDepedendLibraries()
 {
     local deployDir="$1"
-    echo "- Starting composer update"
-    cd "$deployDir"; ./composer.phar install --prefer-dist --profile --optimize-autoloader; cd -
-    echo "- Finished composer update"
+    if [ -f "${deployDir}/composer.phar" ]; then
+        echo "- Starting composer update"
+        cd "$deployDir"; php composer.phar install --prefer-dist --profile --optimize-autoloader; cd -
+        echo "- Finished composer update"
+    else
+        echo "Composer does not exist to"
+    fi
 }
 
 getBranchName()
