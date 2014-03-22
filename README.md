@@ -29,8 +29,7 @@ your repository. Change them according to your needs.
 # Install the post-commit hook
 We now download the post-commit hook and put it in the hooks folder of the repository
 
-    wget https://github.com/jeffery/git-remote-deploy/raw/master/git-remote-deploy.sh
-    mv git-remote-deploy.sh ~/src/project.git/hooks/post-update
+    wget https://github.com/jeffery/git-remote-deploy/raw/master/git-remote-deploy.sh -O ~/src/project.git/hooks/post-update
     chmod +x ~/src/project.git/hooks/post-update
     
 # Setup git config in working copy
